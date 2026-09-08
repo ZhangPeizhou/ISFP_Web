@@ -1,0 +1,191 @@
+backend:
+  name: github
+  repo: ZhangPeizhou/ISFP_Web
+  branch: main
+  # GitHub requires a one-time OAuth service. After creating it, uncomment and edit:
+  # base_url: https://YOUR-OAUTH-PROXY-DOMAIN
+  # auth_endpoint: auth
+
+local_backend: true
+publish_mode: simple
+media_folder: public/uploads
+public_folder: /uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: pages
+    label: Site Settings / 网站基础内容
+    files:
+      - name: site
+        label: Homepage and labels / 首页与栏目名称
+        file: content/pages/site.md
+        fields:
+          - { label: Internal key, name: page_key, widget: hidden, default: site }
+          - { label: Site name EN / 英文站名, name: site_name_en, widget: string }
+          - { label: Site name ZH / 中文站名, name: site_name_zh, widget: string }
+          - { label: Logo initials / Logo 字母, name: site_mark, widget: string }
+          - { label: SEO description EN / 英文搜索摘要, name: meta_description_en, widget: text }
+          - { label: SEO description ZH / 中文搜索摘要, name: meta_description_zh, widget: text }
+          - { label: Announcement EN / 顶部公告英文, name: announcement_en, widget: string }
+          - { label: Announcement ZH / 顶部公告中文, name: announcement_zh, widget: string }
+          - { label: About nav EN / 关于导航英文, name: nav_about_en, widget: string }
+          - { label: About nav ZH / 关于导航中文, name: nav_about_zh, widget: string }
+          - { label: Highlights nav EN / 高光导航英文, name: nav_highlights_en, widget: string }
+          - { label: Highlights nav ZH / 高光导航中文, name: nav_highlights_zh, widget: string }
+          - { label: Events nav EN / 活动导航英文, name: nav_events_en, widget: string }
+          - { label: Events nav ZH / 活动导航中文, name: nav_events_zh, widget: string }
+          - { label: Contact nav EN / 联系导航英文, name: nav_contact_en, widget: string }
+          - { label: Contact nav ZH / 联系导航中文, name: nav_contact_zh, widget: string }
+          - { label: Open menu EN / 打开菜单英文, name: menu_open_en, widget: string }
+          - { label: Open menu ZH / 打开菜单中文, name: menu_open_zh, widget: string }
+          - { label: Close menu EN / 关闭菜单英文, name: menu_close_en, widget: string }
+          - { label: Close menu ZH / 关闭菜单中文, name: menu_close_zh, widget: string }
+          - { label: Hero eyebrow EN / 首页眉题英文, name: hero_eyebrow_en, widget: string }
+          - { label: Hero eyebrow ZH / 首页眉题中文, name: hero_eyebrow_zh, widget: string }
+          - { label: Hero title EN / 首页大标题英文, name: hero_title_en, widget: string }
+          - { label: Hero title ZH / 首页标题中文, name: hero_title_zh, widget: string }
+          - { label: Hero accent EN / 首页强调英文, name: hero_accent_en, widget: string }
+          - { label: Hero accent ZH / 首页强调中文, name: hero_accent_zh, widget: string }
+          - { label: Hero intro EN / 首页简介英文, name: hero_body_en, widget: text }
+          - { label: Hero intro ZH / 首页简介中文, name: hero_body_zh, widget: text }
+          - { label: Main button EN / 主按钮英文, name: hero_primary_cta_en, widget: string }
+          - { label: Main button ZH / 主按钮中文, name: hero_primary_cta_zh, widget: string }
+          - { label: Second button EN / 次按钮英文, name: hero_secondary_cta_en, widget: string }
+          - { label: Second button ZH / 次按钮中文, name: hero_secondary_cta_zh, widget: string }
+          - { label: Welcome note EN / 欢迎说明英文, name: hero_note_en, widget: string }
+          - { label: Welcome note ZH / 欢迎说明中文, name: hero_note_zh, widget: string }
+          - label: Quick facts / 首页数据点
+            name: stats
+            widget: list
+            min: 1
+            fields:
+              - { label: Main value / 主文字, name: value, widget: string }
+              - { label: Label EN / 说明英文, name: label_en, widget: string }
+              - { label: Label ZH / 说明中文, name: label_zh, widget: string }
+          - { label: About kicker EN / 关于眉题英文, name: about_kicker_en, widget: string }
+          - { label: About kicker ZH / 关于眉题中文, name: about_kicker_zh, widget: string }
+          - { label: Highlights kicker EN / 高光眉题英文, name: highlights_kicker_en, widget: string }
+          - { label: Highlights kicker ZH / 高光眉题中文, name: highlights_kicker_zh, widget: string }
+          - { label: Highlights title EN / 高光标题英文, name: highlights_title_en, widget: string }
+          - { label: Highlights title ZH / 高光标题中文, name: highlights_title_zh, widget: string }
+          - { label: Highlights intro EN / 高光简介英文, name: highlights_intro_en, widget: text }
+          - { label: Highlights intro ZH / 高光简介中文, name: highlights_intro_zh, widget: text }
+          - { label: Events kicker EN / 活动眉题英文, name: events_kicker_en, widget: string }
+          - { label: Events kicker ZH / 活动眉题中文, name: events_kicker_zh, widget: string }
+          - { label: Events title EN / 活动标题英文, name: events_title_en, widget: string }
+          - { label: Events title ZH / 活动标题中文, name: events_title_zh, widget: string }
+          - { label: Events intro EN / 活动简介英文, name: events_intro_en, widget: text }
+          - { label: Events intro ZH / 活动简介中文, name: events_intro_zh, widget: text }
+          - { label: Previous month EN / 上月按钮英文, name: calendar_previous_en, widget: string }
+          - { label: Previous month ZH / 上月按钮中文, name: calendar_previous_zh, widget: string }
+          - { label: Next month EN / 下月按钮英文, name: calendar_next_en, widget: string }
+          - { label: Next month ZH / 下月按钮中文, name: calendar_next_zh, widget: string }
+          - { label: Empty month EN / 无活动提示英文, name: calendar_empty_en, widget: string }
+          - { label: Empty month ZH / 无活动提示中文, name: calendar_empty_zh, widget: string }
+          - { label: Event link EN / 活动链接英文, name: event_register_en, widget: string }
+          - { label: Event link ZH / 活动链接中文, name: event_register_zh, widget: string }
+          - { label: Sample badge EN / 示例标记英文, name: sample_label_en, widget: string }
+          - { label: Sample badge ZH / 示例标记中文, name: sample_label_zh, widget: string }
+          - { label: Contact kicker EN / 联系眉题英文, name: contact_kicker_en, widget: string }
+          - { label: Contact kicker ZH / 联系眉题中文, name: contact_kicker_zh, widget: string }
+          - { label: Footer note EN / 页脚英文, name: footer_note_en, widget: string }
+          - { label: Footer note ZH / 页脚中文, name: footer_note_zh, widget: string }
+          - { label: GoatCounter site code / GoatCounter 站点代码, name: goatcounter_code, widget: string, required: false, hint: "Only enter the code before .goatcounter.com. Leave blank to disable analytics. / 只填写 .goatcounter.com 前面的代码，留空即关闭统计。" }
+          - { label: Show total visits in footer / 在页脚显示累计访问量, name: show_visit_count, widget: boolean, default: true, required: false }
+          - { label: Visit count label EN / 访问量标签英文, name: visit_count_label_en, widget: string, default: Visits }
+          - { label: Visit count label ZH / 访问量标签中文, name: visit_count_label_zh, widget: string, default: 累计访问 }
+
+      - name: about
+        label: About us / 社团介绍
+        file: content/pages/about.md
+        fields:
+          - { label: Internal key, name: page_key, widget: hidden, default: about }
+          - { label: Title EN / 标题英文, name: title_en, widget: string }
+          - { label: Title ZH / 标题中文, name: title_zh, widget: string }
+          - { label: Intro EN / 简介英文, name: intro_en, widget: text }
+          - { label: Intro ZH / 简介中文, name: intro_zh, widget: text }
+          - { label: Body EN / 正文英文, name: body_en, widget: text }
+          - { label: Body ZH / 正文中文, name: body_zh, widget: text }
+          - label: Community values / 社群理念
+            name: values
+            widget: list
+            min: 1
+            fields:
+              - { label: Number / 编号, name: number, widget: string }
+              - { label: Title EN / 标题英文, name: title_en, widget: string }
+              - { label: Title ZH / 标题中文, name: title_zh, widget: string }
+              - { label: Text EN / 内容英文, name: text_en, widget: text }
+              - { label: Text ZH / 内容中文, name: text_zh, widget: text }
+
+      - name: contact
+        label: Contact / 联系方式
+        file: content/pages/contact.md
+        fields:
+          - { label: Internal key, name: page_key, widget: hidden, default: contact }
+          - { label: Title EN / 标题英文, name: title_en, widget: string }
+          - { label: Title ZH / 标题中文, name: title_zh, widget: string }
+          - { label: Intro EN / 简介英文, name: intro_en, widget: text }
+          - { label: Intro ZH / 简介中文, name: intro_zh, widget: text }
+          - { label: Email / 电子邮箱, name: email, widget: string }
+          - { label: Email label EN / 邮箱说明英文, name: email_label_en, widget: string }
+          - { label: Email label ZH / 邮箱说明中文, name: email_label_zh, widget: string }
+          - { label: Instagram URL, name: instagram_url, widget: string, required: false }
+          - { label: Instagram name / 账号名称, name: instagram_label, widget: string, required: false }
+          - { label: WeChat / 微信号, name: wechat, widget: string, required: false }
+          - { label: Location EN / 地点英文, name: location_en, widget: string }
+          - { label: Location ZH / 地点中文, name: location_zh, widget: string }
+          - { label: Reply note EN / 回复说明英文, name: availability_en, widget: string }
+          - { label: Reply note ZH / 回复说明中文, name: availability_zh, widget: string }
+          - { label: Sample data / 是否为示例, name: is_sample, widget: boolean, default: false }
+          - { label: Sample note EN / 示例提示英文, name: sample_note_en, widget: text, required: false }
+          - { label: Sample note ZH / 示例提示中文, name: sample_note_zh, widget: text, required: false }
+
+  - name: highlights
+    label: Past Highlights / 历史活动高光
+    label_singular: Highlight / 活动高光
+    folder: content/highlights
+    create: true
+    delete: true
+    identifier_field: title_en
+    summary: "{{fields.date}} · {{fields.title_en}} / {{fields.title_zh}}"
+    sortable_fields: [date, order, title_en]
+    fields:
+      - { label: Title EN / 标题英文, name: title_en, widget: string }
+      - { label: Title ZH / 标题中文, name: title_zh, widget: string }
+      - { label: Date / 日期, name: date, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false }
+      - { label: Display order / 显示顺序, name: order, widget: number, value_type: int, min: 1 }
+      - { label: Location EN / 地点英文, name: location_en, widget: string }
+      - { label: Location ZH / 地点中文, name: location_zh, widget: string }
+      - { label: Description EN / 介绍英文, name: description_en, widget: text }
+      - { label: Description ZH / 介绍中文, name: description_zh, widget: text }
+      - { label: Photo / 活动照片, name: image, widget: image, choose_url: false }
+      - { label: Photo alt EN / 图片说明英文, name: image_alt_en, widget: string }
+      - { label: Photo alt ZH / 图片说明中文, name: image_alt_zh, widget: string }
+      - { label: Sample content / 是否为示例, name: is_sample, widget: boolean, default: false }
+
+  - name: events
+    label: Upcoming Events / 未来活动
+    label_singular: Event / 活动
+    folder: content/events
+    create: true
+    delete: true
+    identifier_field: title_en
+    summary: "{{fields.date}} · {{fields.title_en}} / {{fields.title_zh}}"
+    sortable_fields: [date, title_en]
+    fields:
+      - { label: Title EN / 标题英文, name: title_en, widget: string }
+      - { label: Title ZH / 标题中文, name: title_zh, widget: string }
+      - { label: Date / 日期, name: date, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false }
+      - { label: Time EN / 时间英文, name: time_en, widget: string }
+      - { label: Time ZH / 时间中文, name: time_zh, widget: string }
+      - { label: Location EN / 地点英文, name: location_en, widget: string }
+      - { label: Location ZH / 地点中文, name: location_zh, widget: string }
+      - { label: Description EN / 介绍英文, name: description_en, widget: text }
+      - { label: Description ZH / 介绍中文, name: description_zh, widget: text }
+      - { label: Registration URL / 报名链接, name: registration_url, widget: string, required: false }
+      - { label: Link label EN / 链接文字英文, name: registration_label_en, widget: string, required: false }
+      - { label: Link label ZH / 链接文字中文, name: registration_label_zh, widget: string, required: false }
+      - { label: Sample content / 是否为示例, name: is_sample, widget: boolean, default: false }

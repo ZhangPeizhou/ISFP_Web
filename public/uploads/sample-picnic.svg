@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Park picnic sample image</title>
+  <desc id="desc">An illustrated summer picnic by a blue lake</desc>
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bfe1dc"/><stop offset="1" stop-color="#eaf3ee"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1320" cy="160" r="100" fill="#f4c65c"/>
+  <path d="M0 520c330-100 650-82 960 20s430 72 640 14v346H0Z" fill="#6ea08d"/>
+  <path d="M0 640c360-60 690-20 980 70s430 70 620 20v170H0Z" fill="#4b8176"/>
+  <path d="M0 500c300 20 530 80 800 48s520-112 800-55v160c-320-50-520 25-800 54S260 650 0 646Z" fill="#70b8c1" opacity=".9"/>
+  <path d="m530 620 520-24 190 230-830 10Z" fill="#ed745d"/>
+  <circle cx="650" cy="580" r="63" fill="#f2c09e"/><path d="M570 760c10-106 35-142 80-142s70 36 80 142" fill="#102f2b"/>
+  <circle cx="940" cy="570" r="63" fill="#9f6948"/><path d="M860 750c10-106 35-142 80-142s70 36 80 142" fill="#f4c65c"/>
+  <g font-family="Arial, sans-serif" fill="#102f2b"><text x="100" y="150" font-size="64" font-weight="700">SUNSHINE & NEW FRIENDS</text><text x="104" y="212" font-size="28" opacity=".72">Replace this illustration with a real event photo in the CMS</text></g>
+</svg>
