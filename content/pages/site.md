@@ -75,7 +75,7 @@ contact_kicker_en: Say hello
 contact_kicker_zh: 和我们打个招呼
 footer_note_en: Built for friendship, confidence, and a softer landing in Canada.
 footer_note_zh: 让友谊、信心与加拿大新生活从这里开始。
-goatcounter_code: ""
+goatcounter_code: isfpweb
 show_visit_count: true
 visit_count_label_en: Visits
 visit_count_label_zh: 累计访问
