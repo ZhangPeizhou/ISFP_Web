@@ -1,7 +1,7 @@
 ---
 page_key: site
 site_name_en: International Students Friendship Program
-site_name_zh: 枫桥国际学生社群
+site_name_zh: 国际学生交流社群
 site_mark: ISFP
 meta_description_en: A welcoming community where international students in
   Canada build friendships, practise English, and feel at home.
