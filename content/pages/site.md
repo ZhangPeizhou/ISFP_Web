@@ -1,9 +1,10 @@
 ---
 page_key: site
-site_name_en: Maple Bridge Community
+site_name_en: International Students Friendship Program
 site_name_zh: 枫桥国际学生社群
-site_mark: MB
-meta_description_en: A welcoming community where international students in Canada build friendships, practise English, and feel at home.
+site_mark: ISFP
+meta_description_en: A welcoming community where international students in
+  Canada build friendships, practise English, and feel at home.
 meta_description_zh: 帮助加拿大国际留学生结交朋友、练习英语并融入本地生活的友好社群。
 announcement_en: New to Canada? You already belong here.
 announcement_zh: 初到加拿大？这里已经为你留了位置。
@@ -25,7 +26,8 @@ hero_title_en: Find your people.
 hero_title_zh: 找到同行伙伴，
 hero_accent_en: Grow your voice.
 hero_accent_zh: 勇敢表达自己。
-hero_body_en: Make genuine friends, practise everyday English, and discover Canadian life in a community that meets you where you are.
+hero_body_en: Make genuine friends, practise everyday English, and discover
+  Canadian life in a community that meets you where you are.
 hero_body_zh: 在轻松友好的社群中结交真诚的朋友、练习日常英语，并一步步了解加拿大生活。
 hero_primary_cta_en: See upcoming events
 hero_primary_cta_zh: 查看未来活动
@@ -49,13 +51,15 @@ highlights_kicker_en: Moments that stay with us
 highlights_kicker_zh: 值得记住的瞬间
 highlights_title_en: Community highlights
 highlights_title_zh: 社群活动高光
-highlights_intro_en: A look back at the conversations, adventures, and small wins that brought us closer.
+highlights_intro_en: A look back at the conversations, adventures, and small
+  wins that brought us closer.
 highlights_intro_zh: 回顾那些让我们彼此靠近的交流、探索与成长时刻。
 events_kicker_en: What’s next
 events_kicker_zh: 接下来
 events_title_en: Upcoming events
 events_title_zh: 未来活动
-events_intro_en: Pick something that feels comfortable. Come alone or bring a friend — we will make room for you.
+events_intro_en: Pick something that feels comfortable. Come alone or bring a
+  friend — we will make room for you.
 events_intro_zh: 选择一个你感兴趣的活动。无论独自前来还是和朋友同行，我们都欢迎你。
 calendar_previous_en: Previous month
 calendar_previous_zh: 上个月
