@@ -2,6 +2,7 @@ backend:
   name: github
   repo: ZhangPeizhou/ISFP_Web
   branch: main
+  site_domain: steady-belekoy-2b507f.netlify.app
   # GitHub requires a one-time OAuth service. After creating it, uncomment and edit:
   # base_url: https://YOUR-OAUTH-PROXY-DOMAIN
   # auth_endpoint: auth
